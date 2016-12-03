@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js_demo</title>
+
+    <script>
+
+	    function clickone(){
+	    	var result = myObj.getPwd("111");
+	        alert("one method result:"+result);
+	    }
+
+	    function clicktwo(){
+	    	document.location = "js://demo?arg1=111";
+	    }
+
+	    function clickthree(){
+	    	var result=prompt("js://demo?arg1=111","");
+	    	alert("two method result:"+result);
+	    }
+
+	    function clicktworesult(result){
+	    	alert("three method result:"+result);
+	    }
+
+
+    </script>
+
+    <style type="text/css">
+    	input{
+    		width: 100px;
+    		height: 50px;
+    		margin: 10px auto;
+    	}
+
+    </style>
+
+</head>
+
+<body>
+<div>
+    <input type="submit" name="invoke" id="one" onclick="clickone()">
+</div>
+<div>
+    <input type="submit" name="invoke" id="two" onclick="clicktwo()">
+</div>
+<div>
+    <input type="submit" name="invoke" id="three" onclick="clickthree()">
+</div>
+</body>
+</html>
