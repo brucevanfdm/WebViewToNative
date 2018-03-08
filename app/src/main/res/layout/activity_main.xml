@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.fedming.webtonativedemo.MainActivity">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="WebToNative"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout" />
 </RelativeLayout>

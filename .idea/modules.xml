@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WebToNativeDemo.iml" filepath="$PROJECT_DIR$/WebToNativeDemo.iml" />
+      <module fileurl="file://D:\OpenSourceProjects\WebViewToNative\WebToNativeDemo.iml" filepath="D:\OpenSourceProjects\WebViewToNative\WebToNativeDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WebViewToNative.iml" filepath="$PROJECT_DIR$/.idea/WebViewToNative.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\OpenSourceProjects\WebViewToNative\app\app.iml" filepath="D:\OpenSourceProjects\WebViewToNative\app\app.iml" />
     </modules>
   </component>
 </project>

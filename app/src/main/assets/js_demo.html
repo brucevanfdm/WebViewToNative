@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>js_demo</title>
-
+    <title>WebToNativeDemo</title>
     <script>
-
-	    function clickone(){
-	    	var result = myObj.getPwd("111");
-	        alert("one method result:"+result);
+	    function click_one(){
+	    	var result = window.MyObj.getPwd("111");
+	        alert("one button result:"+result);
 	    }
 
-	    function clicktwo(){
-	    	document.location = "js://demo?arg1=111";
+	    function click_two(){
+	    	document.location = "js://demo?arg=222";
 	    }
 
-	    function clickthree(){
-	    	var result=prompt("js://demo?arg1=111","");
-	    	alert("two method result:"+result);
+	    function click_three(){
+	    	var result=prompt("js://demo?arg=333","");
+	    	alert("three button result:"+result);
 	    }
 
-	    function clicktworesult(result){
-	    	alert("three method result:"+result);
+	    function click_result(result){
+	    	alert("two button result:"+result);
 	    }
-
 
     </script>
-
     <style type="text/css">
     	input{
-    		width: 100px;
-    		height: 50px;
-    		margin: 10px auto;
+    		width: 800px;
+    		height: 180px;
+    		margin: 50px auto;
+    		text-align:center;
+    		font-size:50px;
     	}
 
     </style>
@@ -38,14 +36,9 @@
 </head>
 
 <body>
-<div>
-    <input type="submit" name="invoke" id="one" onclick="clickone()">
-</div>
-<div>
-    <input type="submit" name="invoke" id="two" onclick="clicktwo()">
-</div>
-<div>
-    <input type="submit" name="invoke" id="three" onclick="clickthree()">
-</div>
+<p style=" margin:0 auto; text-align:center;"><input id="one" class="submit" name="submit" type="submit" onclick="click_one()"/></p>
+<p style=" margin:0 auto; text-align:center;"><input id="two" class="submit" name="submit" type="submit" onclick="click_two()"/></p>
+<p style=" margin:0 auto; text-align:center;"><input id="three" class="submit" name="submit" type="submit" onclick="click_three()"/></p>
+
 </body>
 </html>
